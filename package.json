@@ -1,0 +1,24 @@
+{
+  "name": "run-es6",
+  "version": "1.0.0",
+  "description": "ES6 and TS (typescript) command line runner with babel 7",
+  "main": "./bin/index.js",
+  "bin": {
+    "run-es6": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "node bin/index.js test/test.ts"
+  },
+  "author": "Miquel Martín <miquel.martin@appfeel.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/register": "^7.11.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/node": "^14.6.3"
+  }
+}
