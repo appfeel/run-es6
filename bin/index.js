@@ -45,5 +45,5 @@ if (process.argv.length < 3) {
     console.log(`${process.argv[0]} will be removed from "process.argv"`);
 } else {
     process.argv = [process.argv[0], ...process.argv.slice(2)];
-    require(join(process.cwd(), process.argv[2]));
+    require(join(process.cwd(), process.argv[1]));
 }

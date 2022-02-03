@@ -1,6 +1,6 @@
 {
   "name": "run-es6",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ES6 and TS (typescript) command line runner with babel 7",
   "main": "./bin/index.js",
   "bin": {
