@@ -42,6 +42,8 @@ require('@babel/register')({
 
 if (process.argv.length < 3) {
     console.log(`Usage: ${process.argv[0]} ${process.argv[1]} <your-script.js>`);
+    console.log(`${process.argv[0]} will be removed from "process.argv"`);
 } else {
+    process.argv = [process.argv[0], ...process.argv.slice(2)];
     require(join(process.cwd(), process.argv[2]));
 }
